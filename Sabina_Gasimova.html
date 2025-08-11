@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Flexbox_Medium</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin:0;
+            padding: 0;
+            background-color: white;
+            min-height: 100vh;
+            overflow: hidden;
+            
+            
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            width: 100%;
+            background-color: rgb(11, 102, 240);
+            
+        
+        }
+        a {
+            padding: 15px 20px;
+            color: white;
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            text-decoration: none;
+        
+        }
+    
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            padding: 10px 20px;
+        }
+
+        a:hover{
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+        }
+
+        
+
+
+        @media (max-width: 600px) {
+            .container {
+                display: none;
+            }
+            
+            .nav-2-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                width: 100%;
+                background-color: black; 
+                transition: background 0.5s ease;
+            }
+            
+            .nav-2 {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                padding: 10px 20px;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <body>
+        <header class="container">
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a href="#">News</a>
+                <a href="#">Contact</a>
+                <a href="#">About</a> 
+            </nav>
+        </header>
+        <header class="nav-2-container">
+            <nav class="nav-2">
+                <a href="#">Home</a>
+                <a href="#">News</a>
+                <a href="#">Contact</a>
+                <a href="#">About</a> 
+            </nav>
+        </header>
+    
+</header>
+</body>
+</html>
